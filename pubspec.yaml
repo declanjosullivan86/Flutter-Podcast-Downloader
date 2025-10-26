@@ -1,0 +1,30 @@
+name: podcast_downloader
+description: A Flutter web app to download podcast episodes from an RSS feed.
+publish_to: 'none' # Remove this line if you intend to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For making HTTP requests to fetch the RSS feed
+  http: ^1.2.1
+
+  # For parsing the RSS/XML feed
+  # We use webfeed_plus as it's a well-maintained fork
+  webfeed_plus: ^1.2.1
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
